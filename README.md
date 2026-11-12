@@ -44,6 +44,18 @@ python checks/validate_output.py --family write --file 我的产出.md
 python checks/validate_output.py --family code  --file 我的产出.md
 ```
 
+### 4. 批量评测（跨模型）
+
+```bash
+set CONTRACT_BASE_URL=https://api.example.com/v1
+set CONTRACT_API_KEY=sk-...
+set CONTRACT_MODEL=some-model
+set CONTRACT_MODE=both          # web 单次调用 / agent 校验器回喂重试
+python tests/run_eval.py
+```
+
+两种通道与判读口径见 `tests/report.md`。
+
 ## 三个任务族
 
 | 族 | 用途 | 骨架 |
@@ -66,7 +78,7 @@ scripts/build.py             从 src/ 生成 dist/ 与各入口文件
 checks/lint_rules.py         检查规则自身（空泛词、不可判定、冲突、重复）
 checks/validate_output.py    检查产出是否符合骨架
 tests/cases.jsonl            20 条评测用例
-tests/run_eval.py            接任意 OpenAI 兼容接口批量评测
+tests/run_eval.py            接任意 OpenAI 兼容接口批量评测（web/agent 双通道）
 dist/paste-v1.md             网页端粘贴版（生成）
 ```
 
