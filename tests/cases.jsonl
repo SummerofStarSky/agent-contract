@@ -1,0 +1,20 @@
+{"id":"L01","family":"learn","prompt":"证明根号 2 不是有理数"}
+{"id":"L02","family":"learn","prompt":"用 ε-δ 定义证明 lim(x→2)(3x-1)=5"}
+{"id":"L03","family":"learn","prompt":"解释为什么闭区间上的连续函数一定有最大值"}
+{"id":"L04","family":"learn","prompt":"用归纳法证 1+2+…+n=n(n+1)/2，我想弄清第二步为什么要那样假设"}
+{"id":"L05","family":"learn","prompt":"为什么质量既出现在牛顿第二定律里，又决定重力大小"}
+{"id":"L06","family":"learn","prompt":"Python 里把列表当默认参数为什么会出问题"}
+{"id":"L07","family":"learn","prompt":"命题逻辑里，蕴含式前件为假时整句为什么算真"}
+{"id":"W01","family":"write","prompt":"把这周的 MATH1023 复习计划写成一份笔记"}
+{"id":"W02","family":"write","prompt":"写一封给课程老师的邮件，问期中考试范围"}
+{"id":"W03","family":"write","prompt":"整理 PHYS1112 第四章的公式表"}
+{"id":"W04","family":"write","prompt":"写一份 IRE 与数学+CS 双主修的对比备忘"}
+{"id":"W05","family":"write","prompt":"把今天关于 WorkBuddy 接入的调研写成复盘"}
+{"id":"W06","family":"write","prompt":"写一段用于社团申请的自我介绍"}
+{"id":"C01","family":"code","prompt":"给 checks/validate_output.py 加一条校验：章节顺序必须与 schema 一致"}
+{"id":"C02","family":"code","prompt":"把 scripts/build.py 里的 token 估算换成更准确的实现"}
+{"id":"C03","family":"code","prompt":"给仓库加一个 pre-commit 钩子，提交前跑 lint 和 build --check"}
+{"id":"C04","family":"code","prompt":"修复 CI 里 build --check 在 Windows 上因换行不一致而失败的问题"}
+{"id":"C05","family":"code","prompt":"写一个脚本，批量把 tests/cases.jsonl 喂给多个模型并记录结果"}
+{"id":"C06","family":"code","prompt":"把 src/examples 里的示例改成可直接运行的断言测试"}
+{"id":"C07","family":"code","prompt":"给 README 加一个「哪个工具读哪个文件」的入口矩阵表格"}

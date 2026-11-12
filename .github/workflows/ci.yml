@@ -1,0 +1,36 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 规则自检
+        run: python checks/lint_rules.py
+
+      - name: 生成物零漂移
+        run: python scripts/build.py --check
+
+      - name: 正例必须通过
+        run: |
+          for fam in learn write code; do
+            python checks/validate_output.py --family "$fam" --file "src/examples/$fam/good.md"
+          done
+
+      - name: 反例必须失败
+        run: |
+          for fam in learn write code; do
+            if python checks/validate_output.py --family "$fam" --file "src/examples/$fam/bad.md"; then
+              echo "反例 $fam 竟然通过了，说明校验器太松"
+              exit 1
+            fi
+          done

@@ -1,0 +1,8 @@
+{
+  "family": "write",
+  "sections": ["一句话结论", "正文", "待确认", "自检"],
+  "max_chars": 700,
+  "count_self_check_in_length": false,
+  "requires_self_check": true,
+  "notes": "文档与笔记。结论一句话，正文最多三级标题，必须列待确认。"
+}

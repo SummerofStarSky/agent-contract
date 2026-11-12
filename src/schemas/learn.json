@@ -1,0 +1,8 @@
+{
+  "family": "learn",
+  "sections": ["结论", "关键步骤", "易错点", "自检", "延伸"],
+  "max_chars": 500,
+  "count_self_check_in_length": false,
+  "requires_self_check": true,
+  "notes": "解题与知识讲解。结论先行，五段齐备。"
+}

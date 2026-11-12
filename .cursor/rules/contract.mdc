@@ -1,0 +1,8 @@
+---
+description: 跨模型工作契约（先读 core，再读一个任务族规则）
+alwaysApply: true
+---
+
+读 `src/core.md`，再按任务族读 `src/rules/learn.md` | `src/rules/write.md` | `src/rules/code.md` 之一。完整说明见 `AGENTS.md`。
+
+<!-- build: ae4cd345 -->

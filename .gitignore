@@ -1,0 +1,4 @@
+# dist/ 由 scripts/build.py 生成，但需要提交，方便直接在 GitHub 上复制粘贴
+__pycache__/
+*.pyc
+tests/runs/

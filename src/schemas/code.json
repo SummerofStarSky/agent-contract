@@ -1,0 +1,8 @@
+{
+  "family": "code",
+  "sections": ["改动清单", "关键 diff 摘要", "验证方式", "回滚点", "自检"],
+  "max_chars": 900,
+  "count_self_check_in_length": false,
+  "requires_self_check": true,
+  "notes": "代码与工程改动。必须给验证方式与回滚点，未验证要明说。"
+}

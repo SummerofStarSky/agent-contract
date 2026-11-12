@@ -1,0 +1,2 @@
+# 统一用 LF，避免 Windows 上 build --check 因换行不一致误报漂移
+* text=auto eol=lf
